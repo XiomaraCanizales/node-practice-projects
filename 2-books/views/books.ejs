@@ -1,7 +1,11 @@
-<h1>Books</h1>
+<%- include('./partials/header') %>
 
-<ul>
+<main>
+  <h1>Books</h1>
+
+  <ul>
     <% for (const book of books) { %>
       <li><%= book %></li>
     <% } %>
   </ul>
+</main>

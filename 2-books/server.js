@@ -1,5 +1,4 @@
 const express = require('express')
-const ejs = require('ejs')
 const path = require('path')
 const { 
     booksRouter, 
@@ -11,11 +10,13 @@ const {
 const app = express()
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
+app.use(express.static(__dirname + 'public'))
 
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.send('hi')
+    //res.send('hi')
+    res.render('home')
 })
 
 app.use('/books', booksRouter)

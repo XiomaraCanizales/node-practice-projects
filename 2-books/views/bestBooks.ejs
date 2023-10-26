@@ -1,14 +1,18 @@
-<h1>Best Books</h1>
-<h2>Highest rated books</h2>
+<%- include('./partials/header') %>
 
-<% for (const year in bestBooks) {%>
-    <h3>Year: <%= year %></h3>
-    <ul>
-        <% for (const book of bestBooks[year]) { %>
-            <li>
-                <%= book.title %>
-                (<%= book.rating %>)
-            </li>
-        <% } %>
-    </ul>
-<% } %>
+<main>
+    <h1>Best Books</h1>
+    <h2>Highest rated books</h2>
+
+    <% for (const year in bestBooks) {%>
+        <h3>Year: <%= year %></h3>
+            <ul class="b-books">
+                <% for (const book of bestBooks[year]) { %>
+                    <li>
+                        <%= book.title %>
+                        <b>(<%= book.rating %>)</b>
+                    </li>
+                <% } %>
+            </ul>
+    <% } %>
+</main>

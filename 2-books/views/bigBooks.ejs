@@ -1,11 +1,15 @@
-<h1>Big Books</h1>
-<h2>Over 500 pages</h2>
+<%- include('./partials/header') %>
 
-<ul>
+<main>
+  <h1>Big Books</h1>
+  <h2>Over 500 pages</h2>
+  
+  <ul>
     <% for (const book of books) { %>
       <li>
         <%= book.title %>
-        <%= book.pages %> pages
-     </li>
+        <b><%= book.pages %> pages</b>
+      </li>
     <% } %>
   </ul>
+</main>

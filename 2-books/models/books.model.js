@@ -64,7 +64,6 @@ async function getAllAuthors(req, res) {
         const booksArr = await loadBooksData()
         const authors = new Set()
         for (const book of booksArr) {
-            console.log(book.title)
             authors.add(book.authors)
         }
         return Array.from(authors)

@@ -1,7 +1,11 @@
-<h1>Authors</h1>
+<%- include('./partials/header') %>
 
-<ul>
+<main>
+  <h1>Authors</h1>
+
+  <ul class="authors-container">
     <% for (const author of authors) { %>
       <li><%= author %></li>
     <% } %>
   </ul>
+</main>
