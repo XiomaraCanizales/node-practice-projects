@@ -9,4 +9,7 @@ Repository to upload my first node.js projects.
     The goal of the project was to display multiple criterias, it doesn't edits/updates or deletes anything.
     With this project I also learn to use EJS.
 ### Web Scapper:
-    This project was made following a (tutorial)[https://www.youtube.com/watch?v=-3lqUHeZs_0]
+    This project was made following a [tutorial](https://www.youtube.com/watch?v=-3lqUHeZs_0)
+### Recipe 
+    Doesnt work jet
+    I need to learn more about fetch data from APIs
