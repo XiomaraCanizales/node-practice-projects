@@ -11,5 +11,6 @@ Repository to upload my first node.js projects.
 ### Web Scapper:
     This project was made following a [tutorial](https://www.youtube.com/watch?v=-3lqUHeZs_0)
 ### Recipe 
-    Doesnt work jet
+    Doesnt work yet
     I need to learn more about fetch data from APIs
+    API: https://developer.edamam.com/edamam-docs-recipe-api
