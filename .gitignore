@@ -7,3 +7,6 @@
 3-web-scrapper/node_modules
 4-recipes-app/.DS_Store
 4-recipes-app/node_modules
+5-task-manager/.DS_Store
+5-task-manager/node_modules
+5-task-manager/.env
