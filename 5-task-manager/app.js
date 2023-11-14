@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const tasks = require('./routes/tasks.router')
+const notFound = require('./middleware/not-found')
+const errorHandlerMiddleware = require('./middleware/error-handler')
 
 // db connection
 const connectDB = require('./db/connect')
@@ -13,8 +15,13 @@ app.use(express.json())
 // routes
 app.use('/api/v1/tasks', tasks)
 
+// 404
+app.use(notFound)
+// error handler
+app.use(errorHandlerMiddleware)
+
 // connect to db first, then open server
-const port = 3000
+const port = process.env.PORT || 3000
 const start = async () => {
     try {
         // secure db connection
